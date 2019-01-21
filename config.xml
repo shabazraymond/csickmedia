@@ -1,0 +1,72 @@
+﻿<config
+
+	bannerX="0"
+	bannerY="0"
+	bannerWidth="890"
+	bannerHeight="350"
+	bannerBGColor="000000"
+	
+	numbersX="10"
+	numbersY="320"
+	numbersSpacing="0"
+	numbersHorizontal="yes"
+	
+	numberTextColor="FFFFFF"
+	numberTextAlpha="80"
+	numberTextRollOverColor="111111"
+	numberTextRollOverAlpha="100"
+	
+	numberLineColor="000000"
+	numberLineAlpha="80"
+	numberLineRollOverColor="FFFFFF"
+	numberLineRollOverAlpha="70"
+	
+	numberBGColor="111111"
+	numberBGAlpha="40"
+	numberRollOverBGColor="FFFFFF"
+	numberRollOverBGAlpha="100"
+	
+	descriptionBGColor="000000"
+	descriptionBgAlpha="50"
+	descriptionLocation="up"
+
+	preloadingColor="FFFFFF"
+	preloadingAlpha="70"
+	preloadingTextColor="FFFFFF"
+	preloadingTextAlpha="70"
+
+	timerBarColor="00ff00"
+	timerBarAlpha="50"
+	timerBarHeight="2"
+	timerBarLocation="down"
+	
+	bannerAutoPlay="true"
+
+/>
+
+<items>
+	<item delaytime="7" src="images/banner/4.jpg" href="graphic-design.html" target="_self">
+		<![CDATA[<font color="#FFFFFF" size="12px">Its Your World - We Just Design It</font>]]>
+	</item>
+	<item delaytime="7" src="images/banner/8.jpg" href="graphic-design.html" target="_self">
+		<![CDATA[<font color="#FFFFFF" size="12px">Latest Design for DJ Dirty D "Check My Resume" his latest Mixtape</font>]]>
+	</item>
+	<item delaytime="6" src="images/banner/5.swf" href="graphic-design.html" target="_self">
+		<![CDATA[<font color="#FFFFFF" size="12px">Another One of Our Latest Creations!</font>]]>
+	</item>
+	<item delaytime="7" src="images/banner/7.jpg" href="graphic-design.html" target="_self">
+		<![CDATA[<font color="#FFFFFF" size="14px">Latest and Featured!</font><br><font color="#00FF00" size="12px">View The Gallery!</font>]]>
+	</item>
+	<item delaytime="6" src="images/banner/3.jpg" href="" target="">
+		<![CDATA[<font color="FFFFFF" size="14px">Graphix design for Diamond Princess</font>]]>
+	</item>
+	<item delaytime="6" src="images/banner/1.jpg" href="" target="">
+		<![CDATA[<font color="FFFFFF" size="14px">More of our Featured Work!</font>]]>
+	</item>
+	
+	
+	<item delaytime="6" src="images/banner/hotgirl.swf" href="graphic-design.html" target="_self">
+		<![CDATA[<font color="#FFFFFF" size="12px">Flyer Design</font><br><font color="#00FF00" size="12px"><u>View Gallery!</u></font>]]>
+	</item>
+	
+</items>

@@ -1,0 +1,235 @@
+div#bmenu {
+	float : right; 
+	height: 53px;
+    padding-left: 12px;
+    /*background: url(../images/default/menu/left.png) no-repeat;
+    _background-image: url(../images/default/menu/left.gif); */
+    width:600px; /*origin 610px width */
+    
+}
+
+div#bmenu ul {
+	width : 480px;
+    list-style: none;
+    float: right;
+}
+div#bmenu ul.menu {
+    padding:0 8px 0 5px;
+    /*background: url(../images/default/menu/right.png) no-repeat right 0;
+    _background-image: url(../images/default/menu/right.gif); */
+}
+
+div#bmenu li {
+    position: relative;
+    margin: 0;
+    padding: 0 12px 0 0;
+    _padding-right: 5px;
+    display: block;
+    float: left;
+    z-index: 9;
+    width: 100px;
+    background: url(../images/menu/default/delimiter.png) no-repeat 98% 1px;
+    _background: url(../images/menu/default/delimiter.gif) no-repeat 98% 0;
+}
+div#bmenu li.last { background: none; }
+
+div#bmenu li div {
+    list-style: none;
+    float: left;
+    position: absolute;
+    z-index: 11;
+    top: 53px;
+    left: -10px;
+    visibility: hidden;
+    width: 194px;
+    margin: 1px 0 0 0;
+    background: url(../images/default/menu/submenu-bottom.png) no-repeat 0 bottom;
+    _background-image: url(../images/default/menu/submenu-bottom.gif); 
+}
+div#bmenu li div ul {
+    padding: 20px 0 3px 0;
+}
+div#bmenu li:hover>div {
+    visibility: visible;
+}
+
+div#bmenu a {
+    padding: 0;
+    position: relative;
+    z-index: 10;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: normal 22px 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 0 0 0 -4px;
+    white-space: nowrap;
+    width: 141px;
+    text-align:center;
+    line-height: 54px;
+    height: 54px;
+}
+@-moz-document url-prefix() {
+    div#bmenu a { margin-left: -4px; }
+}
+div#bmenu span {
+    display: block;
+    cursor: pointer;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 16px;
+    text-align: center;
+    color:#bbb;
+}
+div#bmenu a:hover {
+    /*background: #000 url(../images/default/menu/selected-left-with-bg.gif) no-repeat left 0; */
+    text-indent: -56px;
+}
+div#bmenu a:hover span {
+    /*background: #000 url(../images/menu/default/selected-right-with-bg.gif) no-repeat right 0;    */
+    margin-left: 56px;
+    color:#fff;
+}
+div#bmenu li.hover a {
+    /*background: #000 url(../images/default/menu/selected-left-with-bg.gif) no-repeat left 0; */
+    text-indent: -56px;
+}
+div#bmenu li.hover a span {
+    /*background: #000 url(../images/default/menu/selected-right-with-bg.gif) no-repeat right 0; */
+    margin-left: 56px;
+}
+div#bmenu li.hover ul a,
+div#bmenu li.hover ul a span {
+    background: none;
+    text-indent: 0;
+}
+div#bmenu li.hover ul a span,
+div#bmenu li.hover ul a:hover span {
+    margin-left: 0;
+}
+/*div#bmenu li.current a,*/
+div#bmenu ul.menu>li:hover>a {
+    /*background: #000 url(../images/default/menu/selected-left-with-bg.gif) no-repeat left 0; */
+    text-indent: -56px;
+}
+/*div#bmenu li.current a span,*/
+div#bmenu ul.menu>li:hover>a span {
+    /*background: #000 url(../images/default/menu/selected-right-with-bg.gif) no-repeat right 0; */
+    margin-left: 56px;
+}
+/*div#bmenu.js-active li.current a,
+div#bmenu.js-active li.current a span,*/
+div#bmenu.js-active ul.menu li:hover>a,
+div#bmenu.js-active ul.menu li:hover>a span {
+    background: none;
+}
+div#bmenu.js-active ul.menu a:hover,
+div#bmenu.js-active ul.menu a:hover span {
+    background: none;
+}
+
+div#bmenu ul ul a {
+    padding: 0 0 0 12px;
+    float: none;
+    display: block;
+    height: auto;
+    line-height: 26px;
+    font-size: 18px;
+    color: #fff;
+    z-index: -1;
+    white-space: normal;
+    width: 198px;
+    margin-left: 7px;
+    text-transform: none;
+}
+
+div#bmenu li.current ul a,
+div#bmenu li.current ul a span {
+    
+}
+div#bmenu ul ul a:hover {
+    background: #1f1f1f;
+    text-indent: 0;
+}
+div#bmenu ul ul a:hover span {
+    background: none;
+    margin-left: 0;
+
+}
+div#bmenu ul ul a.parent {
+    background: url(../images/default/menu/submenu-pointer-bottom.png) no-repeat 5px bottom;
+    _background-image: url(../images/default/menu/submenu-pointer-bottom.gif);
+}
+div#bmenu ul ul a.parent span {
+    
+}
+div#bmenu ul ul a.parent:hover {
+    background: #1f1f1f url(../images/default/menu/mouseover-submenu-pointer-bottom.png) no-repeat 5px bottom;
+    _background-image: url(../images/default/menu/ie-mouseover-submenu-pointer-bottom.png);
+}
+div#bmenu ul ul a.parent:hover span {
+    background: none;
+}
+div#bmenu ul ul span {
+    margin-top: 0;
+    text-align: left;
+}
+
+div#bmenu ul div {
+    width: 237px;
+    padding-top: 0;
+}
+div#bmenu ul div ul {
+    width: 237px;
+}
+div#bmenu ul ul div {
+    top: -12px;
+    left: 0;
+    margin-left: 210px;
+    padding-top: 12px;
+    background: url(../images/default/menu/subsubmenu-top.png) no-repeat 0 top;
+    _background-image: url(../images/default/menu/subsubmenu-top.gif);
+}
+div#bmenu ul ul div ul {
+    padding-top: 10px;
+    background: url(../images/default/menu/submenu-bottom.png) no-repeat 0 bottom;
+    _background-image: url(../images/default/menu/submenu-bottom.gif);
+}
+div#bmenu ul ul li {
+    background: none;
+    padding: 0;
+    z-index: 9;
+    position:relative;
+    top:-10px;
+    width: 100%;
+}
+div#bmenu ul ul li.last { background: none; }
+div#bmenu ul ul ul li {
+    top:-10px;
+}
+
+/* lava lamp */
+div#bmenu li.back {
+    background: url(../images/default/menu/selected-left.png) no-repeat 0 0;
+    _background-image: url(../images/default/menu/ie-selected-left.png);
+    width: 71px;
+    height: 39px;
+    z-index: 8;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+div#bmenu li.back .left {
+    padding: 0;
+    width: 74px;
+    background: url(../images/default/menu/selected-right.png) no-repeat right 0;
+    _background-image: url(../images/default/menu/ie-selected-right.png);
+    height: 39px;
+    margin: 0 0 0 56px;
+    float: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    visibility: visible;
+}

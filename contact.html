@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<html xmlns="http://www.w3.org/1999.xhtml" lang="en" xml:lang="en">
+<head>
+<title>CsickMedia - Its Your World We Just Design It</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="CsickMedia - Its Your World we Just Design It! Specializing in High Quality Web Design, CD and Mixtape Artwork, Logo Branding, and Software Training" />
+<meta name="author" content="csickmedia | www.csickmedia.com" />
+<meta name="copyright" content="csickmedia | www.csickmedia.com" />
+
+<link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<link rel="stylesheet" href="css/template.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+
+<link rel="stylesheet" type="text/css" href="css/csickmedia.css" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+
+<script type="text/javascript" src="js/add_bookmark.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/lavalamp.js" language="javascript"></script> 
+<script src="js/menu.js" language="javascript"></script> 
+
+<script src="js/jquery.validationEngine-en.js" type="text/javascript"></script>
+<script src="js/jquery.validationEngine.js" type="text/javascript"></script>
+
+	<script>
+		$(document).ready(function() {
+			
+		// SUCCESS AJAX CALL, replace "success: false," by:     success : function() { callSuccessFunction() }, 
+			$("#contact-me").validationEngine({
+				ajaxSubmit: true,
+					ajaxSubmitFile: "ajaxSubmit.php",
+					ajaxSubmitMessage: "Thank you, We will contact you soon !",
+				success :  false,
+				failure : function() {}
+			})
+		});
+	</script>
+
+
+</head>
+
+<body>
+
+</body>
+
+<div id="container">
+
+	<div id="top-head">
+		<ul id="top-nav">
+			
+			<li><img src="images/default/rss.png" alt="RSS Feed" id="rss" /></li>
+			<li><a href="rss/feed.xml" title="RSS Feeds" target="_blank">RSS News Feed</a></li>
+			<li id="addBookmarkContainer"></li>
+		</ul>
+		
+		<div class="clear"></div>
+	</div> <!-- End of Top Nav -->
+	
+	<div id="header">
+	
+		<div id="logo">
+			<h1 id="csickmedia-brand"><a href="/" title="Csickmedia">Csickmedia</a></h1>
+			<p class="tagline">Its Your World We Just Design It!</p>
+		
+		</div> <!--End of Logo and Branding -->
+		
+	
+		<div id="bmenu">
+			<ul class="menu">
+				<!--Home -->
+				<li class="parent"><a href="/" title="Home"><span>Home</span></a></li>
+									
+				<!--Menus -->
+				<li><a href="javascript://"><span>Works</span></a>
+					<div>
+								<ul> 
+									<li><a class="parent" href="web-design.html" title="Web Design"><span style="color:#00ff00">Web Designs</span></a>
+									</li> <!--End of Menu 1 -->
+										
+									<li><a class="parent" href="graphic-design.html" title="Graphic Design"><span style="color:#00ff00">Graphic Designs</span></a>
+									</li> <!-- End of Menu 2 -->
+								
+
+								</ul>
+							</div>
+						</li>
+				<li class="parent"><a href="about-and-services.html" title="About Us"><span>About Us</span></a></li> 
+				<li class="current last"><a href="contact.html" title="Contact"><span>Contact</span></a></li>			 			               
+								
+			</ul><!-- End of overall Main Menu Class -->
+
+		</div> <!--End of Main Menu Div -->					
+					
+		<div class="clear"></div>
+	</div><!-- End of Header -->
+	
+	<div id="main-title">
+		<h2 class="title-page">Contact <span>Us</span></h2>
+		<p class="tagline">Here is how to reach us</p>
+	
+	</div>
+	
+	<div id="main-wrapper">
+	
+		<div id="content-left">
+		
+		<p>Please feel free to contact us by phone, email, instant messaging, or simply by filling out the form below. We will get back to you in the shortest time possible</p>
+		
+		<form id="contact-me" class="form">
+			<fieldset>
+			
+			<label for="name">Name :</label>
+			<input type="text" id="name" name="name" class="validate[required,custom[onlyLetter],length[0,100]] text-input" placeholder="Enter Your First Name" />
+			
+			<label for="business">Business Name : </label>
+			<input type="text" id="business" name="business" class="validate[required,length[6,30]] text-input" placeholder="Your Business Name" />
+			
+			<label for="business">Website : </label>
+			<input type="text" id="website" name="web" placeholder="yourwebsite.com" />
+			
+			<label for="email">Your Email : </label>
+			<input type="text" id="email" name="email" class="validate[required,custom[email]] text-input" placeholder="Your Email Address" />
+			
+					
+						
+			</fieldset>
+			
+			<input type="submit" id="send" value="submit" />
+			
+		</form>
+		
+		<script src="js/jquery.placeholder.js"></script>
+  <script>
+   
+		   $(function() {
+			// Invoke the plugin
+			$('input, textarea').placeholder();
+			// That’s it, really.
+			// Now display a message if the browser supports placeholder natively
+			
+		   });
+	</script>
+			<!-- <div class="clear"></div>  -->
+		</div> <!--End of content left -->
+		
+		<div id="content-right">
+				<div class="prod">
+					<img src="images/default/icon1.png" title="Services" class="main-icon" />
+					
+					<h2 class="title-page">Contact Us</h2>
+					<ul class="prod-list">
+						<li>Email : services@csickmedia.com</li>
+						<li>Mobile : 1.404.829.4189</li>
+						
+					</ul>
+				</div>
+				
+				<div class="prod">
+					<img src="images/default/icon2.png" title="Services" class="main-icon" />
+					
+					<h2 class="title-page">Messaging</h2>
+					<ul class="prod-list">
+						<li>AIM : csickmedia</li>
+						<li>MSN : csickmedia@hotmail.com</li>
+						<li>Skype : csickmedia</li>
+						
+					</ul>
+				</div>
+				
+				<div class="prod">
+					<img src="images/default/icon3.png" title="Services" class="main-icon" />
+					
+					<h2 class="title-page">Social Feeds</h2>
+					<ul class="prod-list">
+						<li>facebook.com/csickmedia</li>
+						<li>linkedin.com/in/csickmedia</li>
+						
+					</ul>
+				</div>
+			
+		</div> <!--End of content right -->
+		
+		<div class="clear"></div>
+	</div><!-- End of main wrapper -->
+	
+	<div id="title-section">
+		<h2 class="title-page">Our Latest <span>Projects</span></h2>
+		<p class="tagline">A few of our Newest Creations</p>
+	</div>
+	
+	<div id="main-content">
+		<div class="content-panel">
+			<h2 class="sub-title">Website Design &amp; Development</h2>
+						
+			<div class="image-hold" id="web-feature"></div>
+			<p>This is the dumby text again just to show how things show look and how much room I have to offer</p>
+			<p><a href="web-design.html" title="Web Design">Launch Projects</a></p>
+		</div> <!--End of One -->
+		
+		<div class="content-panel" id="content-panel-two">
+			<h2 class="sub-title">New GraphiX</h2>
+			
+			<div class="image-hold" id="gfx-feature"></div>
+			<p>This is the dumby text again just to show how things show look and how much room I have to offer</p>
+			<p><a href="graphic-design.html" title="Graphic Design">Launch Projects</a></p>
+		</div><!--End of Two -->
+		
+		<div class="content-panel">
+			<h2 class="sub-title">Services</h2>
+						
+			<div class="image-hold" id="service-feature"></div>
+			<ul class="check-list">
+				<li>Web Design and Development</li>
+				<li>Company Branding</li>
+				<li>DVD / CD Design </li>
+			</ul>
+			<p><a href="about-and-services.html" title="services">See More</a></p>
+		</div><!--End of Three -->
+		
+		
+		<div class="clear"></div>
+	
+	</div><!--End of Main Content -->
+	
+	
+	<div id="footer">
+		<ul id="bottom-nav-left">
+			<li>CsickMedia</li>
+			<li><a href="/" title="CsickMedia">www.csickmedia.com</a></li>
+			<li>email : <a href="#" title="Mail CsickMedia">services@csickmedia.com</a></li>
+			<li>1.404.829.4189</li>
+		</ul>
+		
+		<ul id="bottom-nav-right">
+			<li>Social Feeds</li>
+			<li><a href="http://www.linkedin.com/in/csickmedia" title="LinkedIn" target="_blank">LinkedIn</li>
+			<li><a href="http://www.facebook.com/pages/csickmedia/187588971179" title="Facebook" target="_blank">Facebook</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	
+</div>
+
+</html>
